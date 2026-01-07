@@ -1,0 +1,901 @@
+
+[Checker] Memory Transaction: addr=0, data=0, pc=2147483648
+[Checker] Memory Transaction: addr=0, data=0, pc=2147483652
+[Checker] WB Transaction: rd_addr=2, rd_data=0, valid=1, pc_in=2147483648
+2147483648,275,2,0,0,0,"li sp, 0"
+wb_ptr-0
+--------WB-------- confirm_test_count: 1 passed tests: 1 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=2147483660, data=0, pc=2147483656
+[Checker] WB Transaction: rd_addr=3, rd_data=0, valid=1, pc_in=2147483652
+2147483652,403,3,0,0,0,"li gp, 0"
+wb_ptr-1
+--------WB-------- confirm_test_count: 2 passed tests: 2 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] WB Transaction: rd_addr=1, rd_data=2147483660, valid=1, pc_in=2147483656
+2147483656,92274927,1,2147483660,0,0,"jal pc + 0x58"
+wb_ptr-2
+--------WB-------- confirm_test_count: 3 passed tests: 3 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=1, data=2147483660, pc=2147483744
+[Checker] Memory Transaction: addr=100, data=0, pc=2147483748
+[Checker] WB Transaction: rd_addr=31, rd_data=1, valid=1, pc_in=2147483744
+2147483744,2068371,31,1,0,0,"addi t6, t6, 1"
+wb_ptr-3
+--------WB-------- confirm_test_count: 4 passed tests: 4 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] WB Transaction: rd_addr=5, rd_data=100, valid=1, pc_in=2147483748
+2147483748,104858259,5,100,0,0,"li t0, 100"
+wb_ptr-4
+--------WB-------- confirm_test_count: 5 passed tests: 5 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=150, data=0, pc=2147483752
+[Checker] Memory Transaction: addr=4294967286, data=0, pc=2147483756
+[Checker] WB Transaction: rd_addr=6, rd_data=150, valid=1, pc_in=2147483752
+2147483752,52593427,6,150,0,0,"addi t1, t0, 50"
+wb_ptr-5
+--------WB-------- confirm_test_count: 6 passed tests: 6 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=1, data=0, pc=2147483760
+[Checker] WB Transaction: rd_addr=7, rd_data=4294967286, valid=1, pc_in=2147483756
+2147483756,4284482451,7,4294967286,0,0,"li t2, -10"
+wb_ptr-6
+--------WB-------- confirm_test_count: 7 passed tests: 7 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=0, data=0, pc=2147483764
+[Checker] WB Transaction: rd_addr=8, rd_data=1, valid=1, pc_in=2147483760
+2147483760,209888275,8,1,0,0,"slti s0, t0, 200"
+wb_ptr-7
+--------WB-------- confirm_test_count: 8 passed tests: 8 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] WB Transaction: rd_addr=9, rd_data=0, valid=1, pc_in=2147483764
+2147483764,52602003,9,0,0,0,"slti s1, t0, 50"
+wb_ptr-8
+--------WB-------- confirm_test_count: 9 passed tests: 9 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=1, data=0, pc=2147483768
+[Checker] Memory Transaction: addr=1, data=1, pc=2147483772
+[Checker] WB Transaction: rd_addr=10, rd_data=1, valid=1, pc_in=2147483768
+2147483768,238867,10,1,0,0,"slti a0, t2, 0"
+wb_ptr-9
+--------WB-------- confirm_test_count: 10 passed tests: 10 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=0, data=0, pc=2147483776
+[Checker] WB Transaction: rd_addr=11, rd_data=1, valid=1, pc_in=2147483772
+2147483772,209892755,11,1,0,0,"sltiu a1, t0, 200"
+wb_ptr-10
+--------WB-------- confirm_test_count: 11 passed tests: 11 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=107, data=0, pc=2147483780
+[Checker] WB Transaction: rd_addr=12, rd_data=0, valid=1, pc_in=2147483776
+2147483776,243219,12,0,0,0,"sltiu a2, t2, 0"
+wb_ptr-11
+--------WB-------- confirm_test_count: 12 passed tests: 12 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=4294967295, data=1, pc=2147483784
+[Checker] WB Transaction: rd_addr=13, rd_data=107, valid=1, pc_in=2147483780
+2147483780,15910547,13,107,0,0,"xori a3, t0, 15"
+wb_ptr-12
+--------WB-------- confirm_test_count: 13 passed tests: 13 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=111, data=0, pc=2147483788
+[Checker] WB Transaction: rd_addr=14, rd_data=4294967295, valid=1, pc_in=2147483784
+2147483784,4293936915,14,4294967295,0,0,"not a4, zero"
+wb_ptr-13
+--------WB-------- confirm_test_count: 14 passed tests: 14 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=1365, data=0, pc=2147483792
+[Checker] WB Transaction: rd_addr=15, rd_data=111, valid=1, pc_in=2147483788
+2147483788,15918995,15,111,0,0,"ori a5, t0, 15"
+wb_ptr-14
+--------WB-------- confirm_test_count: 15 passed tests: 15 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] WB Transaction: rd_addr=16, rd_data=1365, valid=1, pc_in=2147483792
+2147483792,1431332883,16,1365,0,0,"ori a6, zero, 1365"
+wb_ptr-15
+--------WB-------- confirm_test_count: 16 passed tests: 16 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=255, data=1, pc=2147483796
+[Checker] Memory Transaction: addr=0, data=0, pc=2147483800
+[Checker] WB Transaction: rd_addr=17, rd_data=255, valid=1, pc_in=2147483796
+2147483796,267876499,17,255,0,0,"andi a7, a4, 255"
+wb_ptr-16
+--------WB-------- confirm_test_count: 17 passed tests: 17 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=150, data=0, pc=2147483804
+[Checker] WB Transaction: rd_addr=18, rd_data=0, valid=1, pc_in=2147483800
+2147483800,1879243027,18,0,0,0,"andi s2, t0, 1792"
+wb_ptr-17
+--------WB-------- confirm_test_count: 18 passed tests: 18 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] WB Transaction: rd_addr=19, rd_data=150, valid=1, pc_in=2147483804
+2147483804,157288851,19,150,0,0,"li s3, 150"
+wb_ptr-18
+--------WB-------- confirm_test_count: 19 passed tests: 19 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 0----------------
+[Checker] Memory Transaction: addr=170, data=150, pc=2147483808
+[Checker] Memory Transaction: addr=1, data=2147483660, pc=2147483812
+[Checker] WB Transaction: rd_addr=20, rd_data=170, valid=1, pc_in=2147483808
+2147483808,20126307,0,0,0,0,"bne t1, s3, pc + 20"
+--------BRANCH/JUMP-------- branch_count: 1----------------
+[Checker] WB Transaction: rd_addr=19, rd_data=1, valid=1, pc_in=2147483812
+2147483812,1051027,19,1,0,0,"li s3, 1"
+wb_ptr-20
+--------WB-------- confirm_test_count: 20 passed tests: 20 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 1----------------
+[Checker] Memory Transaction: addr=13, data=1, pc=2147483816
+[Checker] Memory Transaction: addr=9, data=1, pc=2147483820
+[Checker] WB Transaction: rd_addr=12, rd_data=13, valid=1, pc_in=2147483816
+2147483816,20190819,0,0,0,0,"bne s0, s3, pc + 12"
+--------BRANCH/JUMP-------- branch_count: 2----------------
+[Checker] Memory Transaction: addr=2147483828, data=1, pc=2147483824
+[Checker] WB Transaction: rd_addr=8, rd_data=9, valid=1, pc_in=2147483820
+2147483820,20255843,0,0,0,0,"bne a0, s3, pc + 8"
+--------BRANCH/JUMP-------- branch_count: 3----------------
+[Checker] WB Transaction: rd_addr=0, rd_data=2147483828, valid=1, pc_in=2147483824
+2147483824,8388719,0,0,0,0,"j pc + 0x8"
+--------BRANCH/JUMP-------- branch_count: 4----------------
+[Checker] Memory Transaction: addr=2147483836, data=0, pc=2147483832
+[Checker] WB Transaction: rd_addr=0, rd_data=2147483836, valid=1, pc_in=2147483832
+2147483832,32871,0,0,0,0,"ret"
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=2147483664, data=1365, pc=2147483660
+[Checker] WB Transaction: rd_addr=1, rd_data=2147483664, valid=1, pc_in=2147483660
+2147483660,184549615,1,2147483664,0,0,"jal pc + 0xb0"
+wb_ptr-25
+--------WB-------- confirm_test_count: 21 passed tests: 21 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=2, data=2147483664, pc=2147483836
+[Checker] Memory Transaction: addr=20, data=0, pc=2147483840
+[Checker] WB Transaction: rd_addr=31, rd_data=2, valid=1, pc_in=2147483836
+2147483836,2068371,31,2,0,0,"addi t6, t6, 1"
+wb_ptr-26
+--------WB-------- confirm_test_count: 22 passed tests: 22 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=15, data=111, pc=2147483844
+[Checker] WB Transaction: rd_addr=5, rd_data=20, valid=1, pc_in=2147483840
+2147483840,20972179,5,20,0,0,"li t0, 20"
+wb_ptr-27
+--------WB-------- confirm_test_count: 23 passed tests: 23 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=4294967291, data=0, pc=2147483848
+[Checker] WB Transaction: rd_addr=6, rd_data=15, valid=1, pc_in=2147483844
+2147483844,15729427,6,15,0,0,"li t1, 15"
+wb_ptr-28
+--------WB-------- confirm_test_count: 24 passed tests: 24 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] WB Transaction: rd_addr=7, rd_data=4294967291, valid=1, pc_in=2147483848
+2147483848,4289725331,7,4294967291,0,0,"li t2, -5"
+wb_ptr-29
+--------WB-------- confirm_test_count: 25 passed tests: 25 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=35, data=15, pc=2147483852
+[Checker] Memory Transaction: addr=15, data=4294967291, pc=2147483856
+[Checker] WB Transaction: rd_addr=20, rd_data=35, valid=1, pc_in=2147483852
+2147483852,6457907,20,35,0,0,"add s4, t0, t1"
+wb_ptr-30
+--------WB-------- confirm_test_count: 26 passed tests: 26 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=5, data=15, pc=2147483860
+[Checker] WB Transaction: rd_addr=21, rd_data=15, valid=1, pc_in=2147483856
+2147483856,7506611,21,15,0,0,"add s5, t0, t2"
+wb_ptr-31
+--------WB-------- confirm_test_count: 27 passed tests: 27 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=4294967291, data=20, pc=2147483864
+[Checker] WB Transaction: rd_addr=22, rd_data=5, valid=1, pc_in=2147483860
+2147483860,1080199987,22,5,0,0,"sub s6, t0, t1"
+wb_ptr-32
+--------WB-------- confirm_test_count: 28 passed tests: 28 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=0, data=15, pc=2147483868
+[Checker] WB Transaction: rd_addr=23, rd_data=4294967291, valid=1, pc_in=2147483864
+2147483864,1079184307,23,4294967291,0,0,"sub s7, t1, t0"
+wb_ptr-33
+--------WB-------- confirm_test_count: 29 passed tests: 29 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=1, data=20, pc=2147483872
+[Checker] WB Transaction: rd_addr=24, rd_data=0, valid=1, pc_in=2147483868
+2147483868,6466611,24,0,0,0,"slt s8, t0, t1"
+wb_ptr-34
+--------WB-------- confirm_test_count: 30 passed tests: 30 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=1, data=20, pc=2147483876
+[Checker] WB Transaction: rd_addr=25, rd_data=1, valid=1, pc_in=2147483872
+2147483872,5450931,25,1,0,0,"slt s9, t1, t0"
+wb_ptr-35
+--------WB-------- confirm_test_count: 31 passed tests: 31 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=0, data=15, pc=2147483880
+[Checker] WB Transaction: rd_addr=26, rd_data=1, valid=1, pc_in=2147483876
+2147483876,5483827,26,1,0,0,"slt s10, t2, t0"
+wb_ptr-36
+--------WB-------- confirm_test_count: 32 passed tests: 32 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=0, data=20, pc=2147483884
+[Checker] WB Transaction: rd_addr=27, rd_data=0, valid=1, pc_in=2147483880
+2147483880,6471091,27,0,0,0,"sltu s11, t0, t1"
+wb_ptr-37
+--------WB-------- confirm_test_count: 33 passed tests: 33 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=27, data=15, pc=2147483888
+[Checker] WB Transaction: rd_addr=28, rd_data=0, valid=1, pc_in=2147483884
+2147483884,5488179,28,0,0,0,"sltu t3, t2, t0"
+wb_ptr-38
+--------WB-------- confirm_test_count: 34 passed tests: 34 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=0, data=20, pc=2147483892
+[Checker] WB Transaction: rd_addr=8, rd_data=27, valid=1, pc_in=2147483888
+2147483888,6472755,8,27,0,0,"xor s0, t0, t1"
+wb_ptr-39
+--------WB-------- confirm_test_count: 35 passed tests: 35 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=31, data=15, pc=2147483896
+[Checker] WB Transaction: rd_addr=9, rd_data=0, valid=1, pc_in=2147483892
+2147483892,5424307,9,0,0,0,"xor s1, t0, t0"
+wb_ptr-40
+--------WB-------- confirm_test_count: 36 passed tests: 36 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=20, data=20, pc=2147483900
+[Checker] WB Transaction: rd_addr=10, rd_data=31, valid=1, pc_in=2147483896
+2147483896,6481203,10,31,0,0,"or a0, t0, t1"
+wb_ptr-41
+--------WB-------- confirm_test_count: 37 passed tests: 37 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=4, data=15, pc=2147483904
+[Checker] WB Transaction: rd_addr=11, rd_data=20, valid=1, pc_in=2147483900
+2147483900,5268915,11,20,0,0,"or a1, zero, t0"
+wb_ptr-42
+--------WB-------- confirm_test_count: 38 passed tests: 38 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=0, data=0, pc=2147483908
+[Checker] WB Transaction: rd_addr=12, rd_data=4, valid=1, pc_in=2147483904
+2147483904,6485555,12,4,0,0,"and a2, t0, t1"
+wb_ptr-43
+--------WB-------- confirm_test_count: 39 passed tests: 39 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=35, data=0, pc=2147483912
+[Checker] WB Transaction: rd_addr=13, rd_data=0, valid=1, pc_in=2147483908
+2147483908,194227,13,0,0,0,"and a3, t0, zero"
+wb_ptr-44
+--------WB-------- confirm_test_count: 40 passed tests: 40 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] WB Transaction: rd_addr=29, rd_data=35, valid=1, pc_in=2147483912
+2147483912,36703891,29,35,0,0,"li t4, 35"
+wb_ptr-45
+--------WB-------- confirm_test_count: 41 passed tests: 41 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 5----------------
+[Checker] Memory Transaction: addr=55, data=35, pc=2147483916
+[Checker] Memory Transaction: addr=5, data=20, pc=2147483920
+[Checker] WB Transaction: rd_addr=20, rd_data=55, valid=1, pc_in=2147483916
+2147483916,31070819,0,0,0,0,"bne s4, t4, pc + 20"
+--------BRANCH/JUMP-------- branch_count: 6----------------
+[Checker] WB Transaction: rd_addr=29, rd_data=5, valid=1, pc_in=2147483920
+2147483920,5246611,29,5,0,0,"li t4, 5"
+wb_ptr-47
+--------WB-------- confirm_test_count: 42 passed tests: 42 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 6----------------
+[Checker] Memory Transaction: addr=17, data=5, pc=2147483924
+[Checker] Memory Transaction: addr=8, data=0, pc=2147483928
+[Checker] WB Transaction: rd_addr=12, rd_data=17, valid=1, pc_in=2147483924
+2147483924,31135331,0,0,0,0,"bne s6, t4, pc + 12"
+--------BRANCH/JUMP-------- branch_count: 7----------------
+[Checker] Memory Transaction: addr=2147483936, data=27, pc=2147483932
+[Checker] WB Transaction: rd_addr=8, rd_data=8, valid=1, pc_in=2147483928
+2147483928,431203,0,0,0,0,"bnez a3, pc + 8"
+--------BRANCH/JUMP-------- branch_count: 8----------------
+[Checker] WB Transaction: rd_addr=0, rd_data=2147483936, valid=1, pc_in=2147483932
+2147483932,8388719,0,0,0,0,"j pc + 0x8"
+--------BRANCH/JUMP-------- branch_count: 9----------------
+[Checker] Memory Transaction: addr=2147483944, data=0, pc=2147483940
+[Checker] WB Transaction: rd_addr=0, rd_data=2147483944, valid=1, pc_in=2147483940
+2147483940,32871,0,0,0,0,"ret"
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=2147483668, data=0, pc=2147483664
+[Checker] WB Transaction: rd_addr=1, rd_data=2147483668, valid=1, pc_in=2147483664
+2147483664,293601519,1,2147483668,0,0,"jal pc + 0x118"
+wb_ptr-52
+--------WB-------- confirm_test_count: 43 passed tests: 43 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=3, data=2147483668, pc=2147483944
+[Checker] Memory Transaction: addr=2147590144, data=0, pc=2147483948
+[Checker] WB Transaction: rd_addr=31, rd_data=3, valid=1, pc_in=2147483944
+2147483944,2068371,31,3,0,0,"addi t6, t6, 1"
+wb_ptr-53
+--------WB-------- confirm_test_count: 44 passed tests: 44 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] WB Transaction: rd_addr=2, rd_data=2147590144, valid=1, pc_in=2147483948
+2147483948,2147590455,2,2147590144,0,0,"lui sp, 0x8001a"
+wb_ptr-54
+--------WB-------- confirm_test_count: 45 passed tests: 45 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=2147590144, data=0, pc=2147483952
+[Checker] Memory Transaction: addr=42, data=31, pc=2147483956
+[Checker] WB Transaction: rd_addr=2, rd_data=2147590144, valid=1, pc_in=2147483952
+2147483952,65811,2,2147590144,0,0,"mv sp, sp"
+wb_ptr-55
+--------WB-------- confirm_test_count: 46 passed tests: 46 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=305, data=255, pc=2147483960
+[Checker] WB Transaction: rd_addr=5, rd_data=42, valid=1, pc_in=2147483956
+2147483956,44040851,5,42,0,0,"li t0, 42"
+wb_ptr-56
+--------WB-------- confirm_test_count: 47 passed tests: 47 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=305418240, data=0, pc=2147483964
+[Checker] WB Transaction: rd_addr=6, rd_data=305, valid=1, pc_in=2147483960
+2147483960,319816467,6,305,0,0,"li t1, 305"
+wb_ptr-57
+--------WB-------- confirm_test_count: 48 passed tests: 48 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] WB Transaction: rd_addr=7, rd_data=305418240, valid=1, pc_in=2147483964
+2147483964,305419191,7,305418240,0,0,"lui t2, 0x12345"
+wb_ptr-58
+--------WB-------- confirm_test_count: 49 passed tests: 49 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=305419896, data=0, pc=2147483968
+[Checker] Memory Transaction: addr=200, data=27, pc=2147483972
+[Checker] WB Transaction: rd_addr=7, rd_data=305419896, valid=1, pc_in=2147483968
+2147483968,1736672147,7,305419896,0,0,"addi t2, t2, 1656"
+wb_ptr-59
+--------WB-------- confirm_test_count: 50 passed tests: 50 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=2147590144, data=42, pc=2147483976
+2147483976,5308451,0,0,2147590144,42,"sb t0, 0(sp)"
+mem_addr-2147590144mem_val-42
+--------MEM-------- confirm_test_count: 51 passed tests: 51 failed tests: 0----------------
+mem_ptr-61
+[Checker] WB Transaction: rd_addr=8, rd_data=200, valid=1, pc_in=2147483972
+2147483972,209716243,8,200,0,0,"li s0, 200"
+wb_ptr-60
+--------WB-------- confirm_test_count: 52 passed tests: 52 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=2147590148, data=305, pc=2147483980
+2147483980,6361635,0,0,2147590148,305,"sh t1, 4(sp)"
+mem_addr-2147590148mem_val-305
+--------MEM-------- confirm_test_count: 53 passed tests: 53 failed tests: 0----------------
+mem_ptr-62
+[Checker] WB Transaction: rd_addr=0, rd_data=2147590144, valid=1, pc_in=2147483976
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=2147590152, data=305419896, pc=2147483984
+2147483984,7414819,0,0,2147590152,305419896,"sw t2, 8(sp)"
+mem_addr-2147590152mem_val-305419896
+--------MEM-------- confirm_test_count: 54 passed tests: 54 failed tests: 0----------------
+mem_ptr-63
+[Checker] WB Transaction: rd_addr=4, rd_data=2147590148, valid=1, pc_in=2147483980
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=2147590156, data=200, pc=2147483988
+2147483988,8455715,0,0,2147590156,200,"sb s0, 12(sp)"
+mem_addr-2147590156mem_val-200
+--------MEM-------- confirm_test_count: 55 passed tests: 55 failed tests: 0----------------
+mem_ptr-64
+[Checker] WB Transaction: rd_addr=8, rd_data=2147590152, valid=1, pc_in=2147483984
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=42, data=31, pc=2147483992
+[Checker] WB Transaction: rd_addr=12, rd_data=2147590156, valid=1, pc_in=2147483988
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=42, data=31, pc=2147483996
+[Checker] WB Transaction: rd_addr=10, rd_data=42, valid=1, pc_in=2147483992
+2147483992,44041491,10,42,0,0,"li a0, 42"
+wb_ptr-65
+--------WB-------- confirm_test_count: 56 passed tests: 56 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=305, data=255, pc=2147484000
+[Checker] WB Transaction: rd_addr=11, rd_data=42, valid=1, pc_in=2147483996
+2147483996,44041619,11,42,0,0,"li a1, 42"
+wb_ptr-66
+--------WB-------- confirm_test_count: 57 passed tests: 57 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=305, data=255, pc=2147484004
+[Checker] WB Transaction: rd_addr=12, rd_data=305, valid=1, pc_in=2147484000
+2147484000,319817235,12,305,0,0,"li a2, 305"
+wb_ptr-67
+--------WB-------- confirm_test_count: 58 passed tests: 58 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=305418240, data=0, pc=2147484008
+[Checker] WB Transaction: rd_addr=13, rd_data=305, valid=1, pc_in=2147484004
+2147484004,319817363,13,305,0,0,"li a3, 305"
+wb_ptr-68
+--------WB-------- confirm_test_count: 59 passed tests: 59 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] WB Transaction: rd_addr=14, rd_data=305418240, valid=1, pc_in=2147484008
+2147484008,305420087,14,305418240,0,0,"lui a4, 0x12345"
+wb_ptr-69
+--------WB-------- confirm_test_count: 60 passed tests: 60 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=305419896, data=0, pc=2147484012
+[Checker] Memory Transaction: addr=4294967240, data=200, pc=2147484016
+[Checker] WB Transaction: rd_addr=14, rd_data=305419896, valid=1, pc_in=2147484012
+2147484012,1736902419,14,305419896,0,0,"addi a4, a4, 1656"
+wb_ptr-70
+--------WB-------- confirm_test_count: 61 passed tests: 61 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=200, data=200, pc=2147484020
+[Checker] WB Transaction: rd_addr=15, rd_data=4294967240, valid=1, pc_in=2147484016
+2147484016,4236248979,15,4294967240,0,0,"li a5, -56"
+wb_ptr-71
+--------WB-------- confirm_test_count: 62 passed tests: 62 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=42, data=42, pc=2147484024
+[Checker] WB Transaction: rd_addr=16, rd_data=200, valid=1, pc_in=2147484020
+2147484020,209717267,16,200,0,0,"li a6, 200"
+wb_ptr-72
+--------WB-------- confirm_test_count: 63 passed tests: 63 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] WB Transaction: rd_addr=17, rd_data=42, valid=1, pc_in=2147484024
+2147484024,44042387,17,42,0,0,"li a7, 42"
+wb_ptr-73
+--------WB-------- confirm_test_count: 64 passed tests: 64 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 10----------------
+[Checker] Memory Transaction: addr=70, data=42, pc=2147484028
+[Checker] Memory Transaction: addr=66, data=42, pc=2147484032
+[Checker] WB Transaction: rd_addr=28, rd_data=70, valid=1, pc_in=2147484028
+2147484028,18161251,0,0,0,0,"bne a0, a7, pc + 28"
+--------BRANCH/JUMP-------- branch_count: 11----------------
+[Checker] Memory Transaction: addr=305, data=42, pc=2147484036
+[Checker] WB Transaction: rd_addr=24, rd_data=66, valid=1, pc_in=2147484032
+2147484032,18193507,0,0,0,0,"bne a1, a7, pc + 24"
+--------BRANCH/JUMP-------- branch_count: 12----------------
+[Checker] WB Transaction: rd_addr=17, rd_data=305, valid=1, pc_in=2147484036
+2147484036,319817875,17,305,0,0,"li a7, 305"
+wb_ptr-76
+--------WB-------- confirm_test_count: 65 passed tests: 65 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 12----------------
+[Checker] Memory Transaction: addr=321, data=305, pc=2147484040
+[Checker] Memory Transaction: addr=317, data=305, pc=2147484044
+[Checker] WB Transaction: rd_addr=16, rd_data=321, valid=1, pc_in=2147484040
+2147484040,18225251,0,0,0,0,"bne a2, a7, pc + 16"
+--------BRANCH/JUMP-------- branch_count: 13----------------
+[Checker] Memory Transaction: addr=305419904, data=305419896, pc=2147484048
+[Checker] WB Transaction: rd_addr=12, rd_data=317, valid=1, pc_in=2147484044
+2147484044,18257507,0,0,0,0,"bne a3, a7, pc + 12"
+--------BRANCH/JUMP-------- branch_count: 14----------------
+[Checker] Memory Transaction: addr=2147484056, data=200, pc=2147484052
+[Checker] WB Transaction: rd_addr=8, rd_data=305419904, valid=1, pc_in=2147484048
+2147484048,7804003,0,0,0,0,"bne a4, t2, pc + 8"
+--------BRANCH/JUMP-------- branch_count: 15----------------
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484056, valid=1, pc_in=2147484052
+2147484052,8388719,0,0,0,0,"j pc + 0x8"
+--------BRANCH/JUMP-------- branch_count: 16----------------
+[Checker] Memory Transaction: addr=2147484064, data=0, pc=2147484060
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484064, valid=1, pc_in=2147484060
+2147484060,32871,0,0,0,0,"ret"
+--------BRANCH/JUMP-------- branch_count: 17----------------
+[Checker] Memory Transaction: addr=2147483672, data=305, pc=2147483668
+[Checker] WB Transaction: rd_addr=1, rd_data=2147483672, valid=1, pc_in=2147483668
+2147483668,415236335,1,2147483672,0,0,"jal pc + 0x18c"
+wb_ptr-82
+--------WB-------- confirm_test_count: 66 passed tests: 66 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 17----------------
+[Checker] Memory Transaction: addr=4, data=2147483672, pc=2147484064
+[Checker] Memory Transaction: addr=10, data=42, pc=2147484068
+[Checker] WB Transaction: rd_addr=31, rd_data=4, valid=1, pc_in=2147484064
+2147484064,2068371,31,4,0,0,"addi t6, t6, 1"
+wb_ptr-83
+--------WB-------- confirm_test_count: 67 passed tests: 67 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 17----------------
+[Checker] Memory Transaction: addr=10, data=42, pc=2147484072
+[Checker] WB Transaction: rd_addr=5, rd_data=10, valid=1, pc_in=2147484068
+2147484068,10486419,5,10,0,0,"li t0, 10"
+wb_ptr-84
+--------WB-------- confirm_test_count: 68 passed tests: 68 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 17----------------
+[Checker] Memory Transaction: addr=20, data=35, pc=2147484076
+[Checker] WB Transaction: rd_addr=6, rd_data=10, valid=1, pc_in=2147484072
+2147484072,10486547,6,10,0,0,"li t1, 10"
+wb_ptr-85
+--------WB-------- confirm_test_count: 69 passed tests: 69 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 17----------------
+[Checker] Memory Transaction: addr=4294967291, data=0, pc=2147484080
+[Checker] WB Transaction: rd_addr=7, rd_data=20, valid=1, pc_in=2147484076
+2147484076,20972435,7,20,0,0,"li t2, 20"
+wb_ptr-86
+--------WB-------- confirm_test_count: 70 passed tests: 70 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 17----------------
+[Checker] WB Transaction: rd_addr=8, rd_data=4294967291, valid=1, pc_in=2147484080
+2147484080,4289725459,8,4294967291,0,0,"li s0, -5"
+wb_ptr-87
+--------WB-------- confirm_test_count: 71 passed tests: 71 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 17----------------
+[Checker] Memory Transaction: addr=22, data=10, pc=2147484084
+[Checker] WB Transaction: rd_addr=12, rd_data=22, valid=1, pc_in=2147484084
+2147484084,6456931,0,0,0,0,"beq t0, t1, pc + 12"
+--------BRANCH/JUMP-------- branch_count: 18----------------
+[Checker] Memory Transaction: addr=100, data=0, pc=2147484096
+[Checker] Memory Transaction: addr=22, data=20, pc=2147484100
+[Checker] WB Transaction: rd_addr=20, rd_data=100, valid=1, pc_in=2147484096
+2147484096,104860179,20,100,0,0,"li s4, 100"
+wb_ptr-89
+--------WB-------- confirm_test_count: 72 passed tests: 72 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 18----------------
+[Checker] Memory Transaction: addr=200, data=4294967291, pc=2147484104
+[Checker] WB Transaction: rd_addr=12, rd_data=22, valid=1, pc_in=2147484100
+2147484100,7505507,0,0,0,0,"beq t0, t2, pc + 12"
+--------BRANCH/JUMP-------- branch_count: 19----------------
+[Checker] Memory Transaction: addr=2147484112, data=4294967291, pc=2147484108
+[Checker] WB Transaction: rd_addr=21, rd_data=200, valid=1, pc_in=2147484104
+2147484104,209717907,21,200,0,0,"li s5, 200"
+wb_ptr-91
+--------WB-------- confirm_test_count: 73 passed tests: 73 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 19----------------
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484112, valid=1, pc_in=2147484108
+2147484108,8388719,0,0,0,0,"j pc + 0x8"
+--------BRANCH/JUMP-------- branch_count: 20----------------
+[Checker] Memory Transaction: addr=22, data=20, pc=2147484116
+[Checker] WB Transaction: rd_addr=12, rd_data=22, valid=1, pc_in=2147484116
+2147484116,7509603,0,0,0,0,"bne t0, t2, pc + 12"
+--------BRANCH/JUMP-------- branch_count: 21----------------
+[Checker] Memory Transaction: addr=300, data=305, pc=2147484128
+[Checker] Memory Transaction: addr=22, data=20, pc=2147484132
+[Checker] WB Transaction: rd_addr=22, rd_data=300, valid=1, pc_in=2147484128
+2147484128,314575635,22,300,0,0,"li s6, 300"
+wb_ptr-94
+--------WB-------- confirm_test_count: 74 passed tests: 74 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 21----------------
+[Checker] WB Transaction: rd_addr=12, rd_data=22, valid=1, pc_in=2147484132
+2147484132,7521891,0,0,0,0,"blt t0, t2, pc + 12"
+--------BRANCH/JUMP-------- branch_count: 22----------------
+[Checker] Memory Transaction: addr=400, data=200, pc=2147484144
+[Checker] Memory Transaction: addr=32, data=10, pc=2147484148
+[Checker] WB Transaction: rd_addr=23, rd_data=400, valid=1, pc_in=2147484144
+2147484144,419433363,23,400,0,0,"li s7, 400"
+wb_ptr-96
+--------WB-------- confirm_test_count: 75 passed tests: 75 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 22----------------
+[Checker] WB Transaction: rd_addr=12, rd_data=32, valid=1, pc_in=2147484148
+2147484148,5494371,0,0,0,0,"bge t2, t0, pc + 12"
+--------BRANCH/JUMP-------- branch_count: 23----------------
+[Checker] Memory Transaction: addr=500, data=100, pc=2147484160
+[Checker] Memory Transaction: addr=22, data=20, pc=2147484164
+[Checker] WB Transaction: rd_addr=24, rd_data=500, valid=1, pc_in=2147484160
+2147484160,524291091,24,500,0,0,"li s8, 500"
+wb_ptr-98
+--------WB-------- confirm_test_count: 76 passed tests: 76 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 23----------------
+[Checker] WB Transaction: rd_addr=12, rd_data=22, valid=1, pc_in=2147484164
+2147484164,7530083,0,0,0,0,"bltu t0, t2, pc + 12"
+--------BRANCH/JUMP-------- branch_count: 24----------------
+[Checker] Memory Transaction: addr=600, data=500, pc=2147484176
+[Checker] Memory Transaction: addr=32, data=10, pc=2147484180
+[Checker] WB Transaction: rd_addr=25, rd_data=600, valid=1, pc_in=2147484176
+2147484176,629148819,25,600,0,0,"li s9, 600"
+wb_ptr-100
+--------WB-------- confirm_test_count: 77 passed tests: 77 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 24----------------
+[Checker] WB Transaction: rd_addr=12, rd_data=32, valid=1, pc_in=2147484180
+2147484180,5502563,0,0,0,0,"bgeu t2, t0, pc + 12"
+--------BRANCH/JUMP-------- branch_count: 25----------------
+[Checker] Memory Transaction: addr=700, data=0, pc=2147484192
+[Checker] Memory Transaction: addr=2147484200, data=0, pc=2147484196
+[Checker] WB Transaction: rd_addr=26, rd_data=700, valid=1, pc_in=2147484192
+2147484192,734006547,26,700,0,0,"li s10, 700"
+wb_ptr-102
+--------WB-------- confirm_test_count: 78 passed tests: 78 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 25----------------
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484200, valid=1, pc_in=2147484196
+2147484196,32871,0,0,0,0,"ret"
+--------BRANCH/JUMP-------- branch_count: 26----------------
+[Checker] Memory Transaction: addr=2147483676, data=200, pc=2147483672
+[Checker] WB Transaction: rd_addr=1, rd_data=2147483676, valid=1, pc_in=2147483672
+2147483672,553648367,1,2147483676,0,0,"jal pc + 0x210"
+wb_ptr-104
+--------WB-------- confirm_test_count: 79 passed tests: 79 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 26----------------
+[Checker] Memory Transaction: addr=5, data=2147483676, pc=2147484200
+[Checker] Memory Transaction: addr=2147484208, data=0, pc=2147484204
+[Checker] WB Transaction: rd_addr=31, rd_data=5, valid=1, pc_in=2147484200
+2147484200,2068371,31,5,0,0,"addi t6, t6, 1"
+wb_ptr-105
+--------WB-------- confirm_test_count: 80 passed tests: 80 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 26----------------
+[Checker] WB Transaction: rd_addr=2, rd_data=2147484208, valid=1, pc_in=2147484204
+2147484204,29360495,2,2147484208,0,0,"jal sp, pc + 0x1c"
+wb_ptr-106
+--------WB-------- confirm_test_count: 81 passed tests: 81 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 26----------------
+[Checker] Memory Transaction: addr=111, data=4294967240, pc=2147484232
+[Checker] Memory Transaction: addr=2147484240, data=0, pc=2147484236
+[Checker] WB Transaction: rd_addr=10, rd_data=111, valid=1, pc_in=2147484232
+2147484232,116393235,10,111,0,0,"li a0, 111"
+wb_ptr-107
+--------WB-------- confirm_test_count: 82 passed tests: 82 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 26----------------
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484240, valid=1, pc_in=2147484236
+2147484236,65639,0,0,0,0,"jr sp"
+--------BRANCH/JUMP-------- branch_count: 27----------------
+[Checker] Memory Transaction: addr=800, data=0, pc=2147484208
+[Checker] Memory Transaction: addr=2147484212, data=0, pc=2147484212
+[Checker] WB Transaction: rd_addr=27, rd_data=800, valid=1, pc_in=2147484208
+2147484208,838864275,27,800,0,0,"li s11, 800"
+wb_ptr-109
+--------WB-------- confirm_test_count: 83 passed tests: 83 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 27----------------
+[Checker] WB Transaction: rd_addr=3, rd_data=2147484212, valid=1, pc_in=2147484212
+2147484212,407,3,2147484212,0,0,"auipc gp, 0x0"
+wb_ptr-110
+--------WB-------- confirm_test_count: 84 passed tests: 84 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 27----------------
+[Checker] Memory Transaction: addr=2147484224, data=305, pc=2147484216
+[Checker] WB Transaction: rd_addr=3, rd_data=2147484224, valid=1, pc_in=2147484216
+2147484216,12681619,3,2147484224,0,0,"addi gp, gp, 12"
+wb_ptr-111
+--------WB-------- confirm_test_count: 85 passed tests: 85 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 27----------------
+[Checker] Memory Transaction: addr=2147484224, data=0, pc=2147484220
+[Checker] WB Transaction: rd_addr=4, rd_data=2147484224, valid=1, pc_in=2147484220
+2147484220,98919,4,2147484224,0,0,"jalr tp, gp, 0"
+wb_ptr-112
+--------WB-------- confirm_test_count: 86 passed tests: 86 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 27----------------
+[Checker] Memory Transaction: addr=900, data=2147484224, pc=2147484224
+[Checker] Memory Transaction: addr=2147484232, data=100, pc=2147484228
+[Checker] WB Transaction: rd_addr=28, rd_data=900, valid=1, pc_in=2147484224
+2147484224,943722003,28,900,0,0,"li t3, 900"
+wb_ptr-113
+--------WB-------- confirm_test_count: 87 passed tests: 87 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 27----------------
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484232, valid=1, pc_in=2147484228
+2147484228,20971631,0,0,0,0,"j pc + 0x14"
+--------BRANCH/JUMP-------- branch_count: 28----------------
+[Checker] Memory Transaction: addr=2147484252, data=0, pc=2147484248
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484252, valid=1, pc_in=2147484248
+2147484248,32871,0,0,0,0,"ret"
+--------BRANCH/JUMP-------- branch_count: 29----------------
+[Checker] Memory Transaction: addr=2147483680, data=0, pc=2147483676
+[Checker] WB Transaction: rd_addr=1, rd_data=2147483680, valid=1, pc_in=2147483676
+2147483676,603980015,1,2147483680,0,0,"jal pc + 0x240"
+wb_ptr-116
+--------WB-------- confirm_test_count: 88 passed tests: 88 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 29----------------
+[Checker] Memory Transaction: addr=6, data=2147483680, pc=2147484252
+[Checker] Memory Transaction: addr=305418240, data=2147484224, pc=2147484256
+[Checker] WB Transaction: rd_addr=31, rd_data=6, valid=1, pc_in=2147484252
+2147484252,2068371,31,6,0,0,"addi t6, t6, 1"
+wb_ptr-117
+--------WB-------- confirm_test_count: 89 passed tests: 89 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 29----------------
+[Checker] Memory Transaction: addr=2882396160, data=900, pc=2147484260
+[Checker] WB Transaction: rd_addr=5, rd_data=305418240, valid=1, pc_in=2147484256
+2147484256,305418935,5,305418240,0,0,"lui t0, 0x12345"
+wb_ptr-118
+--------WB-------- confirm_test_count: 90 passed tests: 90 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 29----------------
+[Checker] Memory Transaction: addr=2164261480, data=200, pc=2147484264
+[Checker] WB Transaction: rd_addr=6, rd_data=2882396160, valid=1, pc_in=2147484260
+2147484260,2882396983,6,2882396160,0,0,"lui t1, 0xabcde"
+wb_ptr-119
+--------WB-------- confirm_test_count: 91 passed tests: 91 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 29----------------
+[Checker] Memory Transaction: addr=2147484268, data=0, pc=2147484268
+[Checker] WB Transaction: rd_addr=7, rd_data=2164261480, valid=1, pc_in=2147484264
+2147484264,16778135,7,2164261480,0,0,"auipc t2, 0x1000"
+wb_ptr-120
+--------WB-------- confirm_test_count: 92 passed tests: 92 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 29----------------
+[Checker] Memory Transaction: addr=305418248, data=0, pc=2147484272
+[Checker] WB Transaction: rd_addr=8, rd_data=2147484268, valid=1, pc_in=2147484268
+2147484268,1047,8,2147484268,0,0,"auipc s0, 0x0"
+wb_ptr-121
+--------WB-------- confirm_test_count: 93 passed tests: 93 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 29----------------
+[Checker] WB Transaction: rd_addr=8, rd_data=305418248, valid=1, pc_in=2147484272
+2147484272,169059,0,0,0,0,"bnez t0, pc + 8"
+--------BRANCH/JUMP-------- branch_count: 30----------------
+[Checker] Memory Transaction: addr=2882396168, data=0, pc=2147484280
+[Checker] WB Transaction: rd_addr=8, rd_data=2882396168, valid=1, pc_in=2147484280
+2147484280,201827,0,0,0,0,"bnez t1, pc + 8"
+--------BRANCH/JUMP-------- branch_count: 31----------------
+[Checker] Memory Transaction: addr=2164261492, data=2147484268, pc=2147484288
+[Checker] Memory Transaction: addr=1000, data=2147484268, pc=2147484292
+[Checker] WB Transaction: rd_addr=12, rd_data=2164261492, valid=1, pc_in=2147484288
+2147484288,8619619,0,0,0,0,"beq t2, s0, pc + 12"
+--------BRANCH/JUMP-------- branch_count: 32----------------
+[Checker] Memory Transaction: addr=2147484300, data=2147484268, pc=2147484296
+[Checker] WB Transaction: rd_addr=12, rd_data=1000, valid=1, pc_in=2147484292
+2147484292,1048577555,12,1000,0,0,"li a2, 1000"
+wb_ptr-125
+--------WB-------- confirm_test_count: 94 passed tests: 94 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 32----------------
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484300, valid=1, pc_in=2147484296
+2147484296,8388719,0,0,0,0,"j pc + 0x8"
+--------BRANCH/JUMP-------- branch_count: 33----------------
+[Checker] Memory Transaction: addr=2147484308, data=0, pc=2147484304
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484308, valid=1, pc_in=2147484304
+2147484304,32871,0,0,0,0,"ret"
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=2147483684, data=100, pc=2147483680
+[Checker] WB Transaction: rd_addr=1, rd_data=2147483684, valid=1, pc_in=2147483680
+2147483680,658505967,1,2147483684,0,0,"jal pc + 0x274"
+wb_ptr-128
+--------WB-------- confirm_test_count: 95 passed tests: 95 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=7, data=2147483684, pc=2147484308
+[Checker] Memory Transaction: addr=128, data=0, pc=2147484312
+[Checker] WB Transaction: rd_addr=31, rd_data=7, valid=1, pc_in=2147484308
+2147484308,2068371,31,7,0,0,"addi t6, t6, 1"
+wb_ptr-129
+--------WB-------- confirm_test_count: 96 passed tests: 96 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=4, data=2147484224, pc=2147484316
+[Checker] WB Transaction: rd_addr=5, rd_data=128, valid=1, pc_in=2147484312
+2147484312,134218387,5,128,0,0,"li t0, 128"
+wb_ptr-130
+--------WB-------- confirm_test_count: 97 passed tests: 97 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=4294967288, data=500, pc=2147484320
+[Checker] WB Transaction: rd_addr=6, rd_data=4, valid=1, pc_in=2147484316
+2147484316,4195091,6,4,0,0,"li t1, 4"
+wb_ptr-131
+--------WB-------- confirm_test_count: 98 passed tests: 98 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] WB Transaction: rd_addr=7, rd_data=4294967288, valid=1, pc_in=2147484320
+2147484320,4286579603,7,4294967288,0,0,"li t2, -8"
+wb_ptr-132
+--------WB-------- confirm_test_count: 99 passed tests: 99 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=512, data=2147484208, pc=2147484324
+[Checker] Memory Transaction: addr=2048, data=2147484224, pc=2147484328
+[Checker] WB Transaction: rd_addr=10, rd_data=512, valid=1, pc_in=2147484324
+2147484324,2266387,10,512,0,0,"slli a0, t0, 2"
+wb_ptr-133
+--------WB-------- confirm_test_count: 100 passed tests: 100 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=32, data=2147484208, pc=2147484332
+[Checker] WB Transaction: rd_addr=11, rd_data=2048, valid=1, pc_in=2147484328
+2147484328,4363667,11,2048,0,0,"slli a1, t0, 4"
+wb_ptr-134
+--------WB-------- confirm_test_count: 101 passed tests: 101 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=8, data=2147484224, pc=2147484336
+[Checker] WB Transaction: rd_addr=12, rd_data=32, valid=1, pc_in=2147484332
+2147484332,2283027,12,32,0,0,"srli a2, t0, 2"
+wb_ptr-135
+--------WB-------- confirm_test_count: 102 passed tests: 102 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=4294967292, data=2147483684, pc=2147484340
+[Checker] WB Transaction: rd_addr=13, rd_data=8, valid=1, pc_in=2147484336
+2147484336,4380307,13,8,0,0,"srli a3, t0, 4"
+wb_ptr-136
+--------WB-------- confirm_test_count: 103 passed tests: 103 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=32, data=2147484208, pc=2147484344
+[Checker] WB Transaction: rd_addr=14, rd_data=4294967292, valid=1, pc_in=2147484340
+2147484340,1075042067,14,4294967292,0,0,"srai a4, t2, 1"
+wb_ptr-137
+--------WB-------- confirm_test_count: 104 passed tests: 104 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=2048, data=4, pc=2147484348
+[Checker] WB Transaction: rd_addr=15, rd_data=32, valid=1, pc_in=2147484344
+2147484344,1076025235,15,32,0,0,"srai a5, t0, 2"
+wb_ptr-138
+--------WB-------- confirm_test_count: 105 passed tests: 105 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=8, data=4, pc=2147484352
+[Checker] WB Transaction: rd_addr=16, rd_data=2048, valid=1, pc_in=2147484348
+2147484348,6461491,16,2048,0,0,"sll a6, t0, t1"
+wb_ptr-139
+--------WB-------- confirm_test_count: 106 passed tests: 106 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=4294967295, data=4, pc=2147484356
+[Checker] WB Transaction: rd_addr=17, rd_data=8, valid=1, pc_in=2147484352
+2147484352,6478003,17,8,0,0,"srl a7, t0, t1"
+wb_ptr-140
+--------WB-------- confirm_test_count: 107 passed tests: 107 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=512, data=0, pc=2147484360
+[Checker] WB Transaction: rd_addr=18, rd_data=4294967295, valid=1, pc_in=2147484356
+2147484356,1080285491,18,4294967295,0,0,"sra s2, t2, t1"
+wb_ptr-141
+--------WB-------- confirm_test_count: 108 passed tests: 108 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] WB Transaction: rd_addr=19, rd_data=512, valid=1, pc_in=2147484360
+2147484360,536873363,19,512,0,0,"li s3, 512"
+wb_ptr-142
+--------WB-------- confirm_test_count: 109 passed tests: 109 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 34----------------
+[Checker] Memory Transaction: addr=528, data=512, pc=2147484364
+[Checker] Memory Transaction: addr=32, data=0, pc=2147484368
+[Checker] WB Transaction: rd_addr=16, rd_data=528, valid=1, pc_in=2147484364
+2147484364,20256867,0,0,0,0,"bne a0, s3, pc + 16"
+--------BRANCH/JUMP-------- branch_count: 35----------------
+[Checker] WB Transaction: rd_addr=19, rd_data=32, valid=1, pc_in=2147484368
+2147484368,33556883,19,32,0,0,"li s3, 32"
+wb_ptr-144
+--------WB-------- confirm_test_count: 110 passed tests: 110 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 35----------------
+[Checker] Memory Transaction: addr=40, data=32, pc=2147484372
+[Checker] Memory Transaction: addr=2147484380, data=2147484268, pc=2147484376
+[Checker] WB Transaction: rd_addr=8, rd_data=40, valid=1, pc_in=2147484372
+2147484372,20321379,0,0,0,0,"bne a2, s3, pc + 8"
+--------BRANCH/JUMP-------- branch_count: 36----------------
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484380, valid=1, pc_in=2147484376
+2147484376,8388719,0,0,0,0,"j pc + 0x8"
+--------BRANCH/JUMP-------- branch_count: 37----------------
+[Checker] Memory Transaction: addr=2147484388, data=0, pc=2147484384
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484388, valid=1, pc_in=2147484384
+2147484384,32871,0,0,0,0,"ret"
+--------BRANCH/JUMP-------- branch_count: 38----------------
+[Checker] Memory Transaction: addr=2147483688, data=0, pc=2147483684
+[Checker] WB Transaction: rd_addr=1, rd_data=2147483688, valid=1, pc_in=2147483684
+2147483684,738197743,1,2147483688,0,0,"jal pc + 0x2c0"
+wb_ptr-148
+--------WB-------- confirm_test_count: 111 passed tests: 111 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 38----------------
+[Checker] Memory Transaction: addr=7, data=4294967288, pc=2147484388
+[Checker] WB Transaction: rd_addr=29, rd_data=7, valid=1, pc_in=2147484388
+2147484388,7343763,29,7,0,0,"li t4, 7"
+wb_ptr-149
+--------WB-------- confirm_test_count: 112 passed tests: 112 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 38----------------
+[Checker] Memory Transaction: addr=23, data=7, pc=2147484392
+[Checker] Memory Transaction: addr=12, data=0, pc=2147484396
+[Checker] WB Transaction: rd_addr=16, rd_data=23, valid=1, pc_in=2147484392
+2147484392,31430755,0,0,0,0,"bne t6, t4, pc + 16"
+--------BRANCH/JUMP-------- branch_count: 39----------------
+[Checker] Memory Transaction: addr=999, data=4294967288, pc=2147484400
+[Checker] WB Transaction: rd_addr=12, rd_data=12, valid=1, pc_in=2147484396
+2147484396,988771,0,0,0,0,"bnez t5, pc + 12"
+--------BRANCH/JUMP-------- branch_count: 40----------------
+[Checker] Memory Transaction: addr=2147484408, data=2147484268, pc=2147484404
+[Checker] WB Transaction: rd_addr=28, rd_data=999, valid=1, pc_in=2147484400
+2147484400,1047531027,28,999,0,0,"li t3, 999"
+wb_ptr-152
+--------WB-------- confirm_test_count: 113 passed tests: 113 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 40----------------
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484408, valid=1, pc_in=2147484404
+2147484404,8388719,0,0,0,0,"j pc + 0x8"
+--------BRANCH/JUMP-------- branch_count: 41----------------
+[Checker] Memory Transaction: addr=2147484416, data=0, pc=2147484412
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484416, valid=1, pc_in=2147484412
+2147484412,32871,0,0,0,0,"ret"
+--------BRANCH/JUMP-------- branch_count: 42----------------
+[Checker] Memory Transaction: addr=1000, data=2147484268, pc=2147483688
+[Checker] Memory Transaction: addr=2147483696, data=100, pc=2147483692
+[Checker] WB Transaction: rd_addr=29, rd_data=1000, valid=1, pc_in=2147483688
+2147483688,1048579731,29,1000,0,0,"li t4, 1000"
+wb_ptr-155
+--------WB-------- confirm_test_count: 114 passed tests: 114 failed tests: 0----------------
+--------BRANCH/JUMP-------- branch_count: 42----------------
+[Checker] WB Transaction: rd_addr=0, rd_data=2147483696, valid=1, pc_in=2147483692
+2147483692,759169135,0,0,0,0,"j pc + 0x2d4"
+--------BRANCH/JUMP-------- branch_count: 43----------------
+[Checker] Memory Transaction: addr=2147484420, data=0, pc=2147484416
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484420, valid=1, pc_in=2147484416
+2147484416,111,0,0,0,0,"j pc + 0x0"
+--------BRANCH/JUMP-------- branch_count: 44----------------
+[Checker] Memory Transaction: addr=2147484420, data=0, pc=2147484416
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484420, valid=1, pc_in=2147484416
+0,0,0,0,0,0,""
+--------BRANCH/JUMP-------- branch_count: 45----------------
+[Checker] Memory Transaction: addr=2147484420, data=0, pc=2147484416
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484420, valid=1, pc_in=2147484416
+0,0,0,0,0,0,""
+--------BRANCH/JUMP-------- branch_count: 46----------------
+[Checker] Memory Transaction: addr=2147484420, data=0, pc=2147484416
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484420, valid=1, pc_in=2147484416
+0,0,0,0,0,0,""
+--------BRANCH/JUMP-------- branch_count: 47----------------
+[Checker] Memory Transaction: addr=2147484420, data=0, pc=2147484416
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484420, valid=1, pc_in=2147484416
+0,0,0,0,0,0,""
+--------BRANCH/JUMP-------- branch_count: 48----------------
+[Checker] Memory Transaction: addr=2147484420, data=0, pc=2147484416
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484420, valid=1, pc_in=2147484416
+0,0,0,0,0,0,""
+--------BRANCH/JUMP-------- branch_count: 49----------------
+[Checker] Memory Transaction: addr=2147484420, data=0, pc=2147484416
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484420, valid=1, pc_in=2147484416
+0,0,0,0,0,0,""
+--------BRANCH/JUMP-------- branch_count: 50----------------
+[Checker] Memory Transaction: addr=2147484420, data=0, pc=2147484416
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484420, valid=1, pc_in=2147484416
+0,0,0,0,0,0,""
+--------BRANCH/JUMP-------- branch_count: 51----------------
+[Checker] Memory Transaction: addr=2147484420, data=0, pc=2147484416
+[Checker] WB Transaction: rd_addr=0, rd_data=2147484420, valid=1, pc_in=2147484416
+0,0,0,0,0,0,""
+--------BRANCH/JUMP-------- branch_count: 52----------------
+Total ticks404 cycles ...
+Compute time: 4 ms
+Update time: 0 ms
+Total execution time: 4 ms

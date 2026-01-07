@@ -1,3 +1,4 @@
+warning: tohost and fromhost symbols not in ELF; can't communicate with target
 core   0: 0x00001000 (0x00000297) auipc   t0, 0x0
 core   0: 0x00001004 (0x02028593) addi    a1, t0, 32
 core   0: 0x00001008 (0xf1402573) csrr    a0, mhartid
@@ -57,8 +58,8 @@ core   0: 0x8000011c (0x0080006f) j       pc + 0x8
 core   0: 0x80000124 (0x00008067) ret
 core   0: 0x80000010 (0x118000ef) jal     pc + 0x118
 core   0: 0x80000128 (0x001f8f93) addi    t6, t6, 1
-core   0: 0x8000012c (0x00400117) auipc   sp, 0x400
-core   0: 0x80000130 (0xed410113) addi    sp, sp, -300
+core   0: 0x8000012c (0x8001a137) lui     sp, 0x8001a
+core   0: 0x80000130 (0x00010113) mv      sp, sp
 core   0: 0x80000134 (0x02a00293) li      t0, 42
 core   0: 0x80000138 (0x13100313) li      t1, 305
 core   0: 0x8000013c (0x123453b7) lui     t2, 0x12345
@@ -68,95 +69,96 @@ core   0: 0x80000148 (0x00510023) sb      t0, 0(sp)
 core   0: 0x8000014c (0x00611223) sh      t1, 4(sp)
 core   0: 0x80000150 (0x00712423) sw      t2, 8(sp)
 core   0: 0x80000154 (0x00810623) sb      s0, 12(sp)
-core   0: 0x80000158 (0x00010503) lb      a0, 0(sp)
-core   0: 0x8000015c (0x00014583) lbu     a1, 0(sp)
-core   0: 0x80000160 (0x00411603) lh      a2, 4(sp)
-core   0: 0x80000164 (0x00415683) lhu     a3, 4(sp)
-core   0: 0x80000168 (0x00812703) lw      a4, 8(sp)
-core   0: 0x8000016c (0x00c10783) lb      a5, 12(sp)
-core   0: 0x80000170 (0x00c14803) lbu     a6, 12(sp)
-core   0: 0x80000174 (0x02a00893) li      a7, 42
-core   0: 0x80000178 (0x01151e63) bne     a0, a7, pc + 28
-core   0: 0x8000017c (0x01159c63) bne     a1, a7, pc + 24
-core   0: 0x80000180 (0x13100893) li      a7, 305
-core   0: 0x80000184 (0x01161863) bne     a2, a7, pc + 16
-core   0: 0x80000188 (0x01169663) bne     a3, a7, pc + 12
-core   0: 0x8000018c (0x00771463) bne     a4, t2, pc + 8
-core   0: 0x80000190 (0x0080006f) j       pc + 0x8
-core   0: 0x80000198 (0x00008067) ret
-core   0: 0x80000014 (0x188000ef) jal     pc + 0x188
-core   0: 0x8000019c (0x001f8f93) addi    t6, t6, 1
-core   0: 0x800001a0 (0x00a00293) li      t0, 10
-core   0: 0x800001a4 (0x00a00313) li      t1, 10
-core   0: 0x800001a8 (0x01400393) li      t2, 20
-core   0: 0x800001ac (0xffb00413) li      s0, -5
-core   0: 0x800001b0 (0x00628663) beq     t0, t1, pc + 12
-core   0: 0x800001bc (0x06400a13) li      s4, 100
-core   0: 0x800001c0 (0x00728663) beq     t0, t2, pc + 12
-core   0: 0x800001c4 (0x0c800a93) li      s5, 200
-core   0: 0x800001c8 (0x0080006f) j       pc + 0x8
-core   0: 0x800001d0 (0x00729663) bne     t0, t2, pc + 12
-core   0: 0x800001dc (0x12c00b13) li      s6, 300
-core   0: 0x800001e0 (0x0072c663) blt     t0, t2, pc + 12
-core   0: 0x800001ec (0x19000b93) li      s7, 400
-core   0: 0x800001f0 (0x0053d663) bge     t2, t0, pc + 12
-core   0: 0x800001fc (0x1f400c13) li      s8, 500
-core   0: 0x80000200 (0x0072e663) bltu    t0, t2, pc + 12
-core   0: 0x8000020c (0x25800c93) li      s9, 600
-core   0: 0x80000210 (0x0053f663) bgeu    t2, t0, pc + 12
-core   0: 0x8000021c (0x2bc00d13) li      s10, 700
-core   0: 0x80000220 (0x00008067) ret
-core   0: 0x80000018 (0x20c000ef) jal     pc + 0x20c
-core   0: 0x80000224 (0x001f8f93) addi    t6, t6, 1
-core   0: 0x80000228 (0x01c0016f) jal     sp, pc + 0x1c
-core   0: 0x80000244 (0x06f00513) li      a0, 111
-core   0: 0x80000248 (0x00010067) jr      sp
-core   0: 0x8000022c (0x32000d93) li      s11, 800
-core   0: 0x80000230 (0x00000197) auipc   gp, 0x0
-core   0: 0x80000234 (0x00c18193) addi    gp, gp, 12
-core   0: 0x80000238 (0x00018267) jalr    tp, gp, 0
-core   0: 0x8000023c (0x38400e13) li      t3, 900
-core   0: 0x80000240 (0x0140006f) j       pc + 0x14
-core   0: 0x80000254 (0x00008067) ret
-core   0: 0x8000001c (0x23c000ef) jal     pc + 0x23c
-core   0: 0x80000258 (0x001f8f93) addi    t6, t6, 1
-core   0: 0x8000025c (0x123452b7) lui     t0, 0x12345
-core   0: 0x80000260 (0xabcde337) lui     t1, 0xabcde
-core   0: 0x80000264 (0x01000397) auipc   t2, 0x1000
-core   0: 0x80000268 (0x00000417) auipc   s0, 0x0
-core   0: 0x8000026c (0x00029463) bnez    t0, pc + 8
-core   0: 0x80000274 (0x00031463) bnez    t1, pc + 8
-core   0: 0x8000027c (0x00838663) beq     t2, s0, pc + 12
-core   0: 0x80000280 (0x3e800613) li      a2, 1000
-core   0: 0x80000284 (0x0080006f) j       pc + 0x8
-core   0: 0x8000028c (0x00008067) ret
-core   0: 0x80000020 (0x270000ef) jal     pc + 0x270
-core   0: 0x80000290 (0x001f8f93) addi    t6, t6, 1
-core   0: 0x80000294 (0x08000293) li      t0, 128
-core   0: 0x80000298 (0x00400313) li      t1, 4
-core   0: 0x8000029c (0xff800393) li      t2, -8
-core   0: 0x800002a0 (0x00229513) slli    a0, t0, 2
-core   0: 0x800002a4 (0x00429593) slli    a1, t0, 4
-core   0: 0x800002a8 (0x0022d613) srli    a2, t0, 2
-core   0: 0x800002ac (0x0042d693) srli    a3, t0, 4
-core   0: 0x800002b0 (0x4013d713) srai    a4, t2, 1
-core   0: 0x800002b4 (0x4022d793) srai    a5, t0, 2
-core   0: 0x800002b8 (0x00629833) sll     a6, t0, t1
-core   0: 0x800002bc (0x0062d8b3) srl     a7, t0, t1
-core   0: 0x800002c0 (0x4063d933) sra     s2, t2, t1
-core   0: 0x800002c4 (0x20000993) li      s3, 512
-core   0: 0x800002c8 (0x01351863) bne     a0, s3, pc + 16
-core   0: 0x800002cc (0x02000993) li      s3, 32
-core   0: 0x800002d0 (0x01361463) bne     a2, s3, pc + 8
-core   0: 0x800002d4 (0x0080006f) j       pc + 0x8
-core   0: 0x800002dc (0x00008067) ret
-core   0: 0x80000024 (0x2bc000ef) jal     pc + 0x2bc
-core   0: 0x800002e0 (0x00700e93) li      t4, 7
-core   0: 0x800002e4 (0x01df9863) bne     t6, t4, pc + 16
-core   0: 0x800002e8 (0x000f1663) bnez    t5, pc + 12
-core   0: 0x800002ec (0x3e700e13) li      t3, 999
-core   0: 0x800002f0 (0x0080006f) j       pc + 0x8
-core   0: 0x800002f8 (0x00008067) ret
+core   0: 0x80000158 (0x02a00513) li      a0, 42
+core   0: 0x8000015c (0x02a00593) li      a1, 42
+core   0: 0x80000160 (0x13100613) li      a2, 305
+core   0: 0x80000164 (0x13100693) li      a3, 305
+core   0: 0x80000168 (0x12345737) lui     a4, 0x12345
+core   0: 0x8000016c (0x67870713) addi    a4, a4, 1656
+core   0: 0x80000170 (0xfc800793) li      a5, -56
+core   0: 0x80000174 (0x0c800813) li      a6, 200
+core   0: 0x80000178 (0x02a00893) li      a7, 42
+core   0: 0x8000017c (0x01151e63) bne     a0, a7, pc + 28
+core   0: 0x80000180 (0x01159c63) bne     a1, a7, pc + 24
+core   0: 0x80000184 (0x13100893) li      a7, 305
+core   0: 0x80000188 (0x01161863) bne     a2, a7, pc + 16
+core   0: 0x8000018c (0x01169663) bne     a3, a7, pc + 12
+core   0: 0x80000190 (0x00771463) bne     a4, t2, pc + 8
+core   0: 0x80000194 (0x0080006f) j       pc + 0x8
+core   0: 0x8000019c (0x00008067) ret
+core   0: 0x80000014 (0x18c000ef) jal     pc + 0x18c
+core   0: 0x800001a0 (0x001f8f93) addi    t6, t6, 1
+core   0: 0x800001a4 (0x00a00293) li      t0, 10
+core   0: 0x800001a8 (0x00a00313) li      t1, 10
+core   0: 0x800001ac (0x01400393) li      t2, 20
+core   0: 0x800001b0 (0xffb00413) li      s0, -5
+core   0: 0x800001b4 (0x00628663) beq     t0, t1, pc + 12
+core   0: 0x800001c0 (0x06400a13) li      s4, 100
+core   0: 0x800001c4 (0x00728663) beq     t0, t2, pc + 12
+core   0: 0x800001c8 (0x0c800a93) li      s5, 200
+core   0: 0x800001cc (0x0080006f) j       pc + 0x8
+core   0: 0x800001d4 (0x00729663) bne     t0, t2, pc + 12
+core   0: 0x800001e0 (0x12c00b13) li      s6, 300
+core   0: 0x800001e4 (0x0072c663) blt     t0, t2, pc + 12
+core   0: 0x800001f0 (0x19000b93) li      s7, 400
+core   0: 0x800001f4 (0x0053d663) bge     t2, t0, pc + 12
+core   0: 0x80000200 (0x1f400c13) li      s8, 500
+core   0: 0x80000204 (0x0072e663) bltu    t0, t2, pc + 12
+core   0: 0x80000210 (0x25800c93) li      s9, 600
+core   0: 0x80000214 (0x0053f663) bgeu    t2, t0, pc + 12
+core   0: 0x80000220 (0x2bc00d13) li      s10, 700
+core   0: 0x80000224 (0x00008067) ret
+core   0: 0x80000018 (0x210000ef) jal     pc + 0x210
+core   0: 0x80000228 (0x001f8f93) addi    t6, t6, 1
+core   0: 0x8000022c (0x01c0016f) jal     sp, pc + 0x1c
+core   0: 0x80000248 (0x06f00513) li      a0, 111
+core   0: 0x8000024c (0x00010067) jr      sp
+core   0: 0x80000230 (0x32000d93) li      s11, 800
+core   0: 0x80000234 (0x00000197) auipc   gp, 0x0
+core   0: 0x80000238 (0x00c18193) addi    gp, gp, 12
+core   0: 0x8000023c (0x00018267) jalr    tp, gp, 0
+core   0: 0x80000240 (0x38400e13) li      t3, 900
+core   0: 0x80000244 (0x0140006f) j       pc + 0x14
+core   0: 0x80000258 (0x00008067) ret
+core   0: 0x8000001c (0x240000ef) jal     pc + 0x240
+core   0: 0x8000025c (0x001f8f93) addi    t6, t6, 1
+core   0: 0x80000260 (0x123452b7) lui     t0, 0x12345
+core   0: 0x80000264 (0xabcde337) lui     t1, 0xabcde
+core   0: 0x80000268 (0x01000397) auipc   t2, 0x1000
+core   0: 0x8000026c (0x00000417) auipc   s0, 0x0
+core   0: 0x80000270 (0x00029463) bnez    t0, pc + 8
+core   0: 0x80000278 (0x00031463) bnez    t1, pc + 8
+core   0: 0x80000280 (0x00838663) beq     t2, s0, pc + 12
+core   0: 0x80000284 (0x3e800613) li      a2, 1000
+core   0: 0x80000288 (0x0080006f) j       pc + 0x8
+core   0: 0x80000290 (0x00008067) ret
+core   0: 0x80000020 (0x274000ef) jal     pc + 0x274
+core   0: 0x80000294 (0x001f8f93) addi    t6, t6, 1
+core   0: 0x80000298 (0x08000293) li      t0, 128
+core   0: 0x8000029c (0x00400313) li      t1, 4
+core   0: 0x800002a0 (0xff800393) li      t2, -8
+core   0: 0x800002a4 (0x00229513) slli    a0, t0, 2
+core   0: 0x800002a8 (0x00429593) slli    a1, t0, 4
+core   0: 0x800002ac (0x0022d613) srli    a2, t0, 2
+core   0: 0x800002b0 (0x0042d693) srli    a3, t0, 4
+core   0: 0x800002b4 (0x4013d713) srai    a4, t2, 1
+core   0: 0x800002b8 (0x4022d793) srai    a5, t0, 2
+core   0: 0x800002bc (0x00629833) sll     a6, t0, t1
+core   0: 0x800002c0 (0x0062d8b3) srl     a7, t0, t1
+core   0: 0x800002c4 (0x4063d933) sra     s2, t2, t1
+core   0: 0x800002c8 (0x20000993) li      s3, 512
+core   0: 0x800002cc (0x01351863) bne     a0, s3, pc + 16
+core   0: 0x800002d0 (0x02000993) li      s3, 32
+core   0: 0x800002d4 (0x01361463) bne     a2, s3, pc + 8
+core   0: 0x800002d8 (0x0080006f) j       pc + 0x8
+core   0: 0x800002e0 (0x00008067) ret
+core   0: 0x80000024 (0x2c0000ef) jal     pc + 0x2c0
+core   0: 0x800002e4 (0x00700e93) li      t4, 7
+core   0: 0x800002e8 (0x01df9863) bne     t6, t4, pc + 16
+core   0: 0x800002ec (0x000f1663) bnez    t5, pc + 12
+core   0: 0x800002f0 (0x3e700e13) li      t3, 999
+core   0: 0x800002f4 (0x0080006f) j       pc + 0x8
+core   0: 0x800002fc (0x00008067) ret
 core   0: 0x80000028 (0x3e800e93) li      t4, 1000
-core   0: 0x8000002c (0x2d00006f) j       pc + 0x2d0
-core   0: 0x800002fc (0x0000006f) j       pc + 0x0
+core   0: 0x8000002c (0x2d40006f) j       pc + 0x2d4
+core   0: 0x80000300 (0x0000006f) j       pc + 0x0
