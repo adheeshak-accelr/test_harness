@@ -1,0 +1,15 @@
+# --- Build Artifacts ---
+# Compiled binaries
+vcd_converter
+rtl_checker
+*.o
+*.out
+*.exe
+
+# --- Simulation Files ---
+# Large VCD dump files
+*.vcd
+
+# --- IDE/System Files ---
+.vscode/
+.DS_Store
